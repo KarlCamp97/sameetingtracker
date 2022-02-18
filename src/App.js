@@ -61,7 +61,7 @@ function App() {
           }
         }}
       />
-        <h4>Notes</h4>
+        <h4>Additional Notes</h4>
         <input className='input-last'/>
       </header>
     </div>
