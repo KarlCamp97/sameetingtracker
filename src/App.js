@@ -1,22 +1,68 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>SA Meeting Tracker</h1>
+        <h4>Scripted Meetings</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+            if (!/[0-9]/.test(event.key)) {
+              event.preventDefault();
+            }
+          }}
+        />
+        <h4>Scripted Assets Reused</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
+      />
+        <h4>Scripted Assets Created</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
+      />
+        <h4>Advisory Meeting</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
+      />
+        <h4>Advisory Assets Reused</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
+      />
+        <h4>Advisory Assets Created</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
+      />
+        <h4>SA Not Required Meetings</h4>
+        <input className='input-one'
+          onKeyPress={(event) => {
+          if (!/[0-9]/.test(event.key)) {
+            event.preventDefault();
+          }
+        }}
+      />
+        <h4>Notes</h4>
+        <input className='input-last'/>
       </header>
     </div>
   );
